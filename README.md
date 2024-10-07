@@ -1,6 +1,3 @@
-Aquí tienes el archivo `README.md` para tu aplicación:
-
-```markdown
 # Backend Challenge API
 
 This is a simple backend application built using Node.js and TypeScript. The app implements JWT-based authentication, a public greetings endpoint, and private endpoints to fetch user data. It has been deployed on [Render.com](https://render.com).
