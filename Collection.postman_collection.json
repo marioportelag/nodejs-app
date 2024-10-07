@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "bd99e954-728d-40c0-a6a1-dde900c78db1",
+		"name": "Mario Portela Backent Test Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18731540"
+	},
+	"item": [
+		{
+			"name": "GET /greetings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://practical-test-for-backend.onrender.com/greetings",
+					"protocol": "https",
+					"host": [
+						"practical-test-for-backend",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"greetings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /auth/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"admin\",\n    \"password\": \"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://practical-test-for-backend.onrender.com/auth/login",
+					"protocol": "https",
+					"host": [
+						"practical-test-for-backend",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /users/:id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI4MzMyMzMwLCJleHAiOjE3MjgzMzIzOTB9.7610vTl6RV44dIKTXtcl7t7C-WtnaQZzy8hDzywn4Go",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://practical-test-for-backend.onrender.com/users/25",
+					"protocol": "https",
+					"host": [
+						"practical-test-for-backend",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"users",
+						"25"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI4MzMyMzMwLCJleHAiOjE3MjgzMzIzOTB9.7610vTl6RV44dIKTXtcl7t7C-WtnaQZzy8hDzywn4Go",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://practical-test-for-backend.onrender.com/users",
+					"protocol": "https",
+					"host": [
+						"practical-test-for-backend",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
