@@ -1,0 +1,13 @@
+# Only package manifests, tsconfig and src/ are needed to build the image.
+.git
+.github
+node_modules
+dist
+coverage
+test
+.env
+.env.*
+*.md
+*.postman_collection.json
+Dockerfile
+.dockerignore
