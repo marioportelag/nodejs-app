@@ -32,7 +32,7 @@
   "homepage": "https://github.com/marioportelag/nodejs-app#readme",
   "dependencies": {
     "express": "^5.3.0",
-    "express-rate-limit": "^8.7.2",
+    "express-rate-limit": "^8.7.4",
     "helmet": "^8.3.0",
     "jsonwebtoken": "^9.0.3",
     "pino": "^10.4.0",
